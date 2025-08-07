@@ -1,6 +1,0 @@
-
-discord.py==2.4.0
-firebase-admin==6.5.0
-google-cloud-firestore==2.16.0
-python-dotenv==1.0.1
-gunicorn==22.0.0

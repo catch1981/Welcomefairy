@@ -1,0 +1,25 @@
+
+services:
+  - type: worker
+    name: welcome-fairy
+    env: docker
+    autoDeploy: true
+    plan: free
+    healthCheckPath: null
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: GUILD_ID
+        value: "1387751793496297522"
+      - key: WELCOME_CHANNEL_ID
+        value: "1387751793496297528"
+      - key: WITCHPATH_CHANNEL_ID
+        value: "1401834843595210813"
+      - key: FRACTUREPATH_CHANNEL_ID
+        value: "1401835023656681482"
+      - key: WITCH_ROLE_NAME
+        value: "Witchpath"
+      - key: FRACTURE_ROLE_NAME
+        value: "Fracturepath"
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false
